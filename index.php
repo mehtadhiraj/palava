@@ -9,16 +9,6 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
-        <style>
-            
-            .amenities-heading{
-                color: #22376b;
-            }
-            /* .amenities{
-                background-color: #22376b;
-                padding: 30px;
-            } */
-        </style>
     </head>
     <body>
         <!-- Navbar Start -->
@@ -122,46 +112,60 @@
         </div>
         <!-- About and Offers ends -->
         <!-- Amenities start -->
-        <div class="amenities">
-            <h2 class="amenities-heading offset-md-2">Amenities at Lakeshore Greens</h2>
-            <div class="slick-carousel">
-                <div>
-                    <div class="row px-2">
-                        <div class="col-12">
-                            <img src="assets/palava_carousel_2.jpg" alt="" width="100%">
-                        </div>
-                        <div class="col-3">
-                            Hello there
+        <div class="amenities container-fluid">
+            <div class="row">
+                <div class="col-md-4 d-flex">
+                    <h2 class="amenities-heading align-self-center ml-4">Amenities at Lakeshore Greens</h2>
+                </div>
+                <div class="slick-carousel col-md-8">
+                    <div class="card">
+                        <div class="row px-2">
+                            <div class="col-12">
+                                <img src="assets/palava_carousel_1.jpg" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <div class="card-title">
+                                    A 8.8 acre landscaped lake side park around a natural lake.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="row px-2">
-                        <div class="col-12">
-                            <img src="assets/palava_carousel_2.jpg" alt="" width="100%">
-                        </div>
-                        <div class="col-3">
-                            Hello there
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="row px-2">
-                        <div class="col-12">
-                            <img src="assets/palava_carousel_2.jpg" alt="" width="100%">
-                        </div>
-                        <div class="col-3">
-                            Hello there
+                    <div>
+                        <div class="row px-2">
+                            <div class="card">
+                                <div class="col-12">
+                                    <img src="assets/palava_carousel_4.jpg" class="card-img">
+                                </div>
+                                <div class="card-img-overlay">
+                                    <div class="card-title">
+                                        Get the best in education at world-class schools including the Lodha World School and The Shri Ram Universal School, one of India's leading schools.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="row px-2">
-                        <div class="col-12">
-                            <img src="assets/palava_carousel_2.jpg" alt="" width="100%">
+                    <div class="card">
+                        <div class="row px-2">
+                            <div class="col-12">
+                                <img src="assets/palava_carousel_5.jpg" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <div class="card-title">
+                                    A grand clubhouse with a swimming pool, gym, private theatre and lounge areas.
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            Hello there
+                    </div>
+                    <div class="card">
+                        <div class="row px-2">
+                            <div class="col-12">
+                                <img src="assets/palava_carousel_6.jpg" class="card-img">
+                            </div>
+                            <div class="card-img-overlay">
+                                <div class="card-title">
+                                    The Olympic Sports Complex with 50m swimming pool, 6 squash courts, 5 tennis courts and 3 badminton courts.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

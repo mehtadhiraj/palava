@@ -114,9 +114,41 @@ div>span{
     transition-duration: 1s;
 }
 .slick-next{
-    right: 25px;
+    right: 30px;
+    background-color: rgba(34,55,107,0.5);
 }
 .slick-prev{
-    left: 25px;
+    left: 30px;
+    background-color: rgba(34,55,107,0.5);
     z-index: 1;
+}
+.amenities-heading{
+    color: #22376b;
+    border: 1px solid #e41080;
+    padding: 10px;
+}
+.amenities-heading:hover{
+    color: #fff;
+    background-color: #22376b;
+    border: 1px solid #e41080;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+.card-title{
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    background-color: rgba(34,55,107,0.3);
+    text-align: center;
+    margin: 100px;
+    font-size: 20px;
+}
+@media(max-width: 1000px){
+    .card-title{
+        color: #fff;
+        text-shadow: 1px 1px #000;
+        background-color: rgba(34,55,107,0.3);
+        text-align: center;
+        margin: 30px;
+        font-size: 10px;
+    }
 }
