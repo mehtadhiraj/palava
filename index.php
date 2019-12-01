@@ -172,7 +172,66 @@
             </div>
         </div>
         <!-- Amenities end -->
+        <!-- Enquiery form start -->
+        <?php
+            // define variables and set to empty values
+            $nameErr = $emailErr = $contactErr = $countryErr = $placeErr = "";
+            $name = $email = $contact = $place = $country = "";
 
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if (empty($_POST["name"])) {
+                    $nameErr = "Name is required";
+                }
+
+                if (empty($_POST["email"])) {
+                    $emailErr = "Email is required";
+                }
+
+                if (empty($_POST["country"])) {
+                    $countryErr = "Country is required.";
+                }
+
+                if (empty($_POST["place"])) {
+                    $placeErr = "Place is required.";
+                }
+
+                if (empty($_POST["contact"])) {
+                    $contactErr = "Contact is required";
+                }
+            }
+        
+        ?>
+        <div class="container">
+            <h2 class="headings" align="center">Enquire</h2>
+            <div class="offset-md-4">
+                <div class="align-center">
+                    <form class="form col-md-6" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                        <input class="form form-control" type="text" name="name" id="name" placeholder="Name"><span class="error">* <?php echo $nameErr;?></span><br>
+                        <input class="form form-control" type="email" name="email" id="email" placeholder="Email"><span class="error">* <?php echo $emailErr;?></span><br>
+                        <input class="form form-control" type="text" name="country" id="country" placeholder="Country"><span class="error">* <?php echo $countryErr;?></span><br>
+                        <input class="form form-control" type="text" name="place" id="place" placeholder="Place"><span class="error">* <?php echo $placeErr;?></span><br>
+                        <input class="form form-control" type="number" name="contact" id="contact" placeholder="Mobile number"><span class="error">* <?php echo $contactErr;?></span><br>
+                        <button class="btn btn-primary container mb-3" type="submit">Enquire</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Enquiery form end -->
+        <!-- Footer start -->
+        <div class="footer">
+            <div class="d-flex justify-content-between">
+                <div >
+                    <img src="assets/palava_logo_white.png" alt="" srcset="" class="justify-content-start">
+                </div>
+                <div class="justify-content-center">
+                    <a href="#">Terms and Condition</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="#">Privacy Policy</a>
+                </div>
+                <div class="justify-content-end">
+                    social media
+                </div>
+            </div>    
+        </div>
+        <!-- Footer ends -->
     </body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

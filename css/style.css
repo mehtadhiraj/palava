@@ -152,3 +152,12 @@ div>span{
         font-size: 10px;
     }
 }
+.error{
+    color: #ff0000;
+}
+.footer{
+    background-color: #22376b;
+    padding: 10px;
+    bottom: 0px;
+    color: #fff;
+}
